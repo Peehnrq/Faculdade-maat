@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="279.0" prefWidth="368.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.maat.controller.LoginController">
+
+    <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Login no Sistema">
+      <padding>
+         <Insets bottom="15.0" />
+      </padding></Label>
+
+    <TextField fx:id="emailField" prefHeight="25.0" prefWidth="254.0" promptText="E-mail">
+      <VBox.margin>
+         <Insets left="70.0" right="70.0" />
+      </VBox.margin></TextField>
+    <PasswordField fx:id="senhaField" promptText="Senha">
+      <VBox.margin>
+         <Insets left="70.0" right="70.0" />
+      </VBox.margin></PasswordField>
+
+    <Button onAction="#fazerLogin" text="Entrar" />
+
+</VBox>

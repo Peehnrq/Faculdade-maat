@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="10" prefHeight="267.0" prefWidth="338.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="main.maat.controller.PessoaController">
+
+    <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Cadastro de Pessoa" GridPane.columnSpan="2" />
+
+    <Label text="Nome:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="nomeField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Label text="Cargo:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <TextField fx:id="cargoField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <Label text="Departamento:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <TextField fx:id="departamentoField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <Button onAction="#salvarPessoa" text="Salvar Pessoa" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+</GridPane>

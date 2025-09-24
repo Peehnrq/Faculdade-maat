@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="300" prefWidth="400" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.maat.controller.EquipeController">
+
+    <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Cadastro de Equipe" />
+
+    <TextField fx:id="nomeEquipeField" maxWidth="300.0" prefHeight="30.0" prefWidth="343.0" promptText="Nome da Equipe" />
+
+    <Label text="Gerente Responsável:" />
+    <ComboBox fx:id="gerenteComboBox" prefWidth="250" />
+
+    <Label text="Adicionar Membros:" />
+    <HBox spacing="5">
+        <ComboBox fx:id="membrosComboBox" prefWidth="150.0">
+         <HBox.margin>
+            <Insets left="75.0" right="30.0" />
+         </HBox.margin></ComboBox>
+        <Button onAction="#adicionarMembro" text="Adicionar">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin></Button>
+    </HBox>
+
+    <Button onAction="#salvarEquipe" text="Salvar Equipe" VBox.vgrow="SOMETIMES">
+      <VBox.margin>
+         <Insets top="15.0" />
+      </VBox.margin></Button>
+
+</VBox>
